@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="am">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#fff1f5">
+<title>Rihuuu's Little World ♡</title>
+<style>
+:root{--pink:#ef8aa8;--deep:#6e3450;--cream:#fff8f1;--rose:#ffe6ee;--ink:#4c3340}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(160deg,#fff7f2,#ffeaf1 55%,#f7e9ff);color:var(--ink);font-family:system-ui,-apple-system,"Noto Sans Ethiopic",sans-serif}
+.wrap{max-width:720px;margin:auto;padding:18px 15px 40px}.hero{padding:28px 18px 22px;text-align:center;background:#ffffffbd;border:1px solid #fff;border-radius:28px;box-shadow:0 12px 35px #9c55731a}
+.kicker{font-size:.82rem;letter-spacing:2px;color:#a05d78}.hero h1{font-size:clamp(2rem,8vw,3.2rem);margin:7px 0;color:#9d496c;line-height:1.1}.hero p{line-height:1.8;margin:10px auto;max-width:520px}.btn{border:0;border-radius:999px;padding:13px 18px;font:inherit;font-weight:750;background:var(--deep);color:white;cursor:pointer;box-shadow:0 5px 0 #45223520}.btn.alt{background:#fff;color:#884461;border:1px solid #f3c5d5;box-shadow:none}.btn:active{transform:translateY(1px)}.hidden{display:none!important}
+.pill{display:inline-block;background:#fff0f5;border-radius:99px;padding:7px 12px;font-size:.85rem;color:#94516b;margin:4px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:16px 0}.card{background:#ffffffd9;border:1px solid white;border-radius:22px;padding:16px;box-shadow:0 8px 24px #8b46640c}.card h2{font-size:1.08rem;margin:4px 0 8px;color:#8c4262}.card p{line-height:1.7;margin:8px 0}.wide{grid-column:1/-1}.photos{display:grid;grid-template-columns:1fr 1fr;gap:10px}.photos figure{margin:0;background:#fff;padding:7px 7px 12px;box-shadow:0 4px 15px #68334818;transform:rotate(-1deg)}.photos figure:nth-child(2){transform:rotate(1.5deg)}.photos img{width:100%;height:220px;object-fit:cover;border-radius:10px}.photos figcaption{text-align:center;font-size:.85rem;padding-top:8px}.message{background:#fff4f7;border:1px dashed #e8a2bb;border-radius:18px;padding:15px;line-height:1.9;min-height:82px;margin:12px 0}.actions{display:flex;gap:8px;flex-wrap:wrap}.actions .btn{flex:1;min-width:125px}.question{font-weight:750;line-height:1.7}.answer{display:block;width:100%;text-align:left;margin:8px 0;border:1px solid #f1c3d4;background:#fff8fb;color:#75405a;padding:12px;border-radius:14px;font:inherit;cursor:pointer}.answer:hover{background:#ffeaf1}.heart{position:fixed;bottom:-30px;pointer-events:none;animation:float 4s linear forwards;z-index:10}@keyframes float{to{transform:translateY(-110vh) rotate(25deg);opacity:0}}.footer{text-align:center;padding:24px 5px;color:#8b5870;font-size:.9rem}.tiny{font-size:.83rem;color:#946e7e}.divider{height:1px;background:#f2d8e2;margin:14px 0}
+@media(max-width:430px){.grid{grid-template-columns:1fr}.photos img{height:180px}.hero{padding:24px 14px}.wide{grid-column:auto}}
+</style></head>
+<body><main class="wrap">
+<section class="hero">
+<div class="kicker">A LITTLE SURPRISE, MADE WITH LOVE ♡</div>
+<h1>Rihuuu’s<br>Little World 💗</h1>
+<p><b>ሪሁዬ፣ የኔ ንግስት 👑</b><br>ይህ ትንሽ ዓለም ለአንቺ ብቻ ነው። ከአጠገብሽ ባልሆንም፣ ፈገግ እንድትዪ እና ትንሽ እንድትዝናኚ ብዬ ሠራሁት። ❤️</p>
+<div class="pill">ለኔ ሁሉ ነገር ነሽ</div><div class="pill">Ye ene tafachhh 😭💗</div>
+<br><button class="btn" onclick="openWorld()">የኔ ሰርፕራይዝ ክፈቺ 🎁</button>
+<p class="tiny">No login • No app • Just tap and smile ♡</p>
+</section>
+<div id="world" class="hidden">
+<section class="card wide" style="margin-top:15px">
+<h2>📸 የእኛ ትዝታዎች</h2>
+<div class="photos">
+<figure><img src="images/hands.jpg" alt="Our hands together"><figcaption>እጅሽን መያዝ… ትንሽ ነገር ግን ትልቅ ደስታ ♡</figcaption></figure>
+<figure><img src="images/memory.jpg" alt="A sweet memory together"><figcaption>ከአንቺ ጋር ያለ ጊዜ ሁሉ ልዩ ነው 🫶</figcaption></figure>
+<figure class="wide"><img src="images/rihuu.jpg" alt="Rihuuu"><figcaption>የኔ ሚስት እንደምትሆኚ ኢንሻአላህ… የኔ ንግስት 👑❤️</figcaption></figure>
+</div></section>
+<div class="grid">
+<section class="card"><h2>💌 የፍቅር መልዕክት</h2><p>አንድ ትንሽ መልዕክት ክፈቺ።</p><div class="message" id="loveMessage">ሪሁዬ፣ አንቺ ለኔ ልዩ ነሽ። ❤️</div><button class="btn alt" onclick="nextMessage()">ሌላ ክፈቺ 💗</button></section>
+<section class="card"><h2>🍫 Nib Chocolate</h2><p>የኔ ቸኮሌት ፍቅረኛ 😭🍫</p><div class="message" id="choco">የNib ቸኮሌት ጣፋጭ ነው… አንቺ ግን ከእሱም በላይ ጣፋጭ ነሽ። 😂❤️</div><button class="btn alt" onclick="chocoSurprise()">ቸኮሌት ክፈቺ 🍫</button></section>
+<section class="card wide"><h2>🎮 እኔን ታውቂኛለሽ?</h2><div id="quiz"><p class="question">ስቆጣብሽ ምን እልሻለሁ? 😂</p><button class="answer" onclick="quizAnswer(0)">A. ሚስትዬ</button><button class="answer" onclick="quizAnswer(1)">B. Cat / Older girl 😭</button><button class="answer" onclick="quizAnswer(0)">C. ፕሮፌሰር</button><div id="quizResult" class="tiny"></div></div></section>
+<section class="card wide"><h2>💞 Would you rather?</h2><p class="question">አሁን ከሁለቱ የትኛውን ትመርጫለሽ?</p><div class="actions"><button class="btn alt" onclick="choice('hug')">ከኔ ጋር ረጅም እቅፍ 🫂</button><button class="btn alt" onclick="choice('date')">የNib ቸኮሌት ዴት 🍫</button></div><div id="choiceResult" class="message hidden"></div></section>
+<section class="card wide"><h2>🌷 አሁን ምን ያስፈልግሻል?</h2><p>ስሜትሽን ምረጪ፤ ለአንቺ የሚሆን መልዕክት አለኝ።</p><div class="actions"><button class="btn alt" onclick="mood('pain')">ህመም አለኝ 🥺</button><button class="btn alt" onclick="mood('sad')">ሀዘን ተሰምቶኛል 💗</button><button class="btn alt" onclick="mood('laugh')">ሳቅ ያስፈልገኛል 😂</button><button class="btn alt" onclick="mood('love')">ፍቅር እፈልጋለሁ 🫂</button></div><div id="moodMessage" class="message hidden"></div></section>
+<section class="card wide"><h2>🔐 የመጨረሻው ሰርፕራይዝ</h2><p>በእኔ ላይ ያለሽን ቅጽል ስም ጻፊ። Hint: Ye ene… 😉</p><input id="secretInput" aria-label="Secret nickname" placeholder="እዚህ ጻፊ…" style="width:100%;padding:13px;border-radius:13px;border:1px solid #e8b4c7;font:inherit;margin-bottom:10px"><button class="btn" onclick="unlock()">ሰርፕራይዙን ክፈቺ 🔓</button><div id="final" class="message hidden"></div></section>
+</div></div>
+<div class="footer">ከአንቺ ርቄ ብሆንም፣ ልቤ ከአንቺ ጋር ነው።<br><b>Always with you. Inshallah, one day I’ll call you my wife. ❤️</b><br><br>Made with love, just for my Rihuuu ♡</div>
+</main>
+<script>
+function openWorld(){document.getElementById('world').classList.remove('hidden');document.getElementById('world').scrollIntoView({behavior:'smooth'});hearts()}
+const messages=[
+"ሪሁዬ ❤️ ሁሉም ቀን ቀላል አይሆንም፣ ግን ሁሌም የሚወድሽ ሰው አለ። እዚህ ነኝ ለአንቺ። 🫂",
+"የኔ ሚስት፣ የኔ ንግስት፣ የኔ ሁሉ ነገር… አንቺን ማግኘቴ ትልቅ ደስታ ነው። ❤️",
+"Ye ene tafachhh 😭😂 እንደዚህ አትጨነቂ፤ የኔ ልብ ከአንቺ ጋር ነው።",
+"አንቺ ስትስቂ ቀኔ ይበራል። ስለዚህ ዛሬ ትንሽ ፈገግ በይልኝ፣ የኔ ሪሁዬ። 🥹",
+"አትተይኝ ብዬ ስልሽ በቀልድ ብቻ አይደለም፤ በህይወቴ ውስጥ ልዩ ቦታ አለሽ። ❤️",
+"ኢንሻአላህ አንድ ቀን ከአጠገብሽ ሆኜ እንክብካቤ አደርግልሻለሁ። እስከዚያ ድረስ ራስሽን ጠብቂልኝ። 💗"
+];let mi=0;
+function nextMessage(){mi=(mi+1)%messages.length;document.getElementById('loveMessage').textContent=messages[mi];hearts()}
+function chocoSurprise(){document.getElementById('choco').textContent=["አንድ Nib ለአንቺ፣ አንድ ለኔ… ግን የኔንም ትበያለሽ አይደል? 😂🍫","ሪሁዬ፣ ቸኮሌት ስጠሽ አንድ ቁራጭ ብቻ እንደምትወስጂ ማመን አልችልም። 😭😂","Nib ጣፋጭ ነው፤ ግን የኔ ሪሁዬ ከሁሉም በላይ ነች። ❤️🍫"][Math.floor(Math.random()*3)];hearts()}
+function quizAnswer(n){document.getElementById('quizResult').textContent=n===1?"ትክክል ነው ድመቴ 😂❤️ ግን እወድሻለሁ!":"አይደለም ሪሁዬ 😂 እንደገና ሞክሪ!";if(n===1)hearts()}
+function choice(c){let el=document.getElementById('choiceResult');el.classList.remove('hidden');el.textContent=c==='hug'?"እቅፍ ከሩቅ እልክልሻለሁ 🫂❤️ አንድ ቀን በእውነት እቅፍ አደርግሻለሁ።":"የNib ቸኮሌት ዴት ተቀባይነት አግኝቷል 😂🍫 ቀኑን አንቺ ምረጪ!";hearts()}
+function mood(m){let t={pain:"የኔ ሪሁዬ 🥺❤️ ካልተመቸሽ እረፊ፣ ሞቅ ያለ ነገር በሆድሽ ላይ አድርጊ እና ውሃ ጠጪ። እኔ ከሩቅ እየጠየቅኩሽ ነኝ። ህመሙ ከባድ ወይም ያልተለመደ ከሆነ እባክሽ የጤና ባለሙያ አነጋግሪ። 🫂",sad:"ሪሁዬ፣ ዛሬ የምትሰሚው ሁሉ እንዲቀልልሽ እመኛለሁ። ማውራት ከፈለግሽ እዚህ ነኝ፤ ማረፍ ከፈለግሽም እረፊ። ❤️",laugh:"አሁን ትእዛዝ ነው 😂 ፈገግ በይ! አለበለዚያ ድመት ብዬ እጠራሻለሁ፣ Older girl! 😭😂❤️",love:"የኔ ንግስት፣ አንቺ ብቻሽን አይደለሽም። ሁሌም ከጎንሽ ነኝ፣ በርቀትም ቢሆን። ኢንሻአላህ ወደፊት አጠገብሽ እሆናለሁ። ❤️"};let el=document.getElementById('moodMessage');el.classList.remove('hidden');el.textContent=t[m];}
+function unlock(){let v=document.getElementById('secretInput').value.toLowerCase().replace(/\s/g,'');let el=document.getElementById('final');if(v.includes('taf')||v.includes('yeene')||v.includes('ታፋ')||v.includes('ኔ')){el.classList.remove('hidden');el.innerHTML="ሪሁዬ የኔ ሁሉ ነገር ❤️<br>አንድ ነገር እንድታስታውሺ እፈልጋለሁ፦ አንቺን እወድሻለሁ፣ ሁሌም ከጎንሽ ለመሆን እሞክራለሁ። ኢንሻአላህ አንድ ቀን ባለቤቴ ብዬ እጠራሻለሁ። እስከዚያ ድረስ ራስሽን ጠብቂልኝ።<br><br><b>Don't leave me alone, የኔ ሪሁዬ። 🥹❤️</b>";hearts()}else{el.classList.remove('hidden');el.textContent="Hint: Ye ene tafachhh 😉 እንደገና ሞክሪ!"}}
+function hearts(){for(let i=0;i<12;i++){let e=document.createElement('div');e.className='heart';e.textContent=['💗','♡','💕','✨'][Math.floor(Math.random()*4)];e.style.left=Math.random()*100+'vw';e.style.fontSize=(16+Math.random()*20)+'px';e.style.animationDuration=(2.8+Math.random()*2)+'s';document.body.appendChild(e);setTimeout(()=>e.remove(),5000)}}
+</script></body></html>
